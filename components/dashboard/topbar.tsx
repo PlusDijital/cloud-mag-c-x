@@ -52,7 +52,7 @@ export function Topbar() {
                   <Badge variant="destructive" className="text-xs">New</Badge>
                 </div>
                 <p className="text-xs text-muted-foreground">
-                  Your "Summer Sale" campaign budget is 90% spent
+                  Your &quot;Summer Sale&quot; campaign budget is 90% spent
                 </p>
               </div>
             </DropdownMenuItem>

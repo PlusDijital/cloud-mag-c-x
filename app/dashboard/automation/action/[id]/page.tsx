@@ -86,7 +86,7 @@ export default function ActionDetailPage({ params }: { params: Promise<{ id: str
           {/* What's Changing */}
           <Card>
             <CardHeader>
-              <CardTitle>What's Changing?</CardTitle>
+              <CardTitle>What&apos;s Changing?</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               {action.affectedEntities.map((entity, index) => (
