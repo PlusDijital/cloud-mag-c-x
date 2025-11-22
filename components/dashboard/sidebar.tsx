@@ -25,7 +25,7 @@ const menuItems = [
   { icon: LayoutDashboard, label: 'Overview', href: '/dashboard' },
   { icon: Palette, label: 'Creative Studio', href: '/dashboard/creative' },
   { icon: Users, label: 'Audiences', href: '/dashboard/audiences' },
-  { icon: Zap, label: 'Automation', href: '/dashboard/automation' },
+  { icon: Zap, label: 'AI Actions', href: '/dashboard/automation/actions' },
   { icon: DollarSign, label: 'Budget Optimizer', href: '/dashboard/budget' },
   { icon: TrendingUp, label: 'Competitor Insights', href: '/dashboard/competitors' },
   { icon: FileText, label: 'Reports', href: '/dashboard/reports' },
@@ -69,7 +69,7 @@ export function Sidebar() {
         {/* Navigation */}
         <nav className="flex-1 space-y-1 p-4 overflow-y-auto">
           {menuItems.map((item) => {
-            const isActive = pathname === item.href
+            const isActive = pathname === item.href || (item.href.includes('automation') && pathname.startsWith('/dashboard/automation'))
             return (
               <Link key={item.href} href={item.href}>
                 <Button
